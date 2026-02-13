@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Меню ресторана Sirtaki в Вайде — греческие закуски, блюда на гриле, рыба, традиционные запеканки и платтеры для компании.">
+    <meta name="keywords" content="меню Sirtaki Weida, греческая еда Вайда, гирос, сувлаки, бараньи котлеты, гриль">
+
+    <title>Меню | Sirtaki Weida</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index-ru.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki" class="logo-img"></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index-ru.html#about" class="nav-link">О нас</a></li>
+                    <li><a href="menu-ru.html" class="nav-link">Меню</a></li>
+                    <li><a href="index-ru.html#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="index-ru.html#contact" class="nav-link">Контакты</a></li>
+                </ul>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn" onclick="window.location.href='menu.html'">DE</button>
+                    <button class="lang-btn active">RU</button>
+                </div>
+
+                <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Бронь</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <ul class="nav-list">
+            <li><a href="index-ru.html#about" class="nav-link">О нас</a></li>
+            <li><a href="menu-ru.html" class="nav-link">Меню</a></li>
+            <li><a href="index-ru.html#gallery" class="nav-link">Галерея</a></li>
+            <li><a href="index-ru.html#contact" class="nav-link">Контакты</a></li>
+        </ul>
+
+        <div class="lang-switcher">
+            <button class="lang-btn" onclick="window.location.href='menu.html'">DE</button>
+            <button class="lang-btn active">RU</button>
+        </div>
+
+        <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Забронировать столик</a>
+    </div>
+
+    <!-- Category Tabs (fixed, outside menu-page to avoid overflow issues) -->
+    <nav class="menu-tabs">
+        <button class="menu-tab active">Холодные</button>
+        <button class="menu-tab">Горячие</button>
+        <button class="menu-tab">Салаты</button>
+        <button class="menu-tab">Супы</button>
+        <button class="menu-tab">Рыба</button>
+        <button class="menu-tab">Гриль</button>
+        <button class="menu-tab">Платтеры</button>
+        <button class="menu-tab">Печь</button>
+    </nav>
+
+    <!-- MENU PAGE -->
+    <main class="menu-page">
+        <div class="container">
+
+            <!-- Horizontal Slider -->
+            <div class="menu-slider">
+                <!-- Swipe Hint -->
+                <div class="swipe-hint">
+                    ← Листайте в сторону для других разделов <span>→</span>
+                </div>
+
+                <div class="menu-slide" id="cold">
+                    <section class="menu-section">
+                        <h2>Холодные закуски</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Дзадзики</div>
+                                    <div class="menu-item-name-ru">Zaziki</div>
+                                    <div class="menu-item-desc">Йогуртовый соус с огурцом, чесноком и оливковым маслом
+                                        по традиционному рецепту</div>
+                                </div>
+                                <div class="menu-item-price">5,80 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Пеперони и оливки</div>
+                                    <div class="menu-item-name-ru">Peperoni &amp; Oliven</div>
+                                    <div class="menu-item-desc">Маринованные пеперони и греческие оливки с лёгкой
+                                        пикантностью</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Свёкла с чесноком</div>
+                                    <div class="menu-item-name-ru">Rote Bete mit Knoblauch</div>
+                                    <div class="menu-item-desc">Свёкла, маринованная с чесноком и оливковым маслом</div>
+                                </div>
+                                <div class="menu-item-price">6,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Тарамасалата</div>
+                                    <div class="menu-item-name-ru">Taramasalat</div>
+                                    <div class="menu-item-desc">Нежный крем из рыбной икры с лимонной ноткой</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Хтипити</div>
+                                    <div class="menu-item-name-ru">Chtipiti</div>
+                                    <div class="menu-item-desc">Пикантный крем из феты с паприкой и оливковым маслом
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Салат из осьминога</div>
+                                    <div class="menu-item-name-ru">Oktopussalat</div>
+                                    <div class="menu-item-desc">Нежный осьминог с оливковым маслом и средиземноморскими
+                                        травами</div>
+                                </div>
+                                <div class="menu-item-price">11,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Фета с пеперони и оливками</div>
+                                    <div class="menu-item-name-ru">Schafskäse mit Peperoni &amp; Oliven</div>
+                                    <div class="menu-item-desc">Греческая фета с оливками и лёгкой остротой пеперони
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">7,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Салат из кальмаров</div>
+                                    <div class="menu-item-name-ru">Kalamariasalat</div>
+                                    <div class="menu-item-desc">Свежий салат с кальмарами и ароматными травами</div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="warm">
+                    <section class="menu-section">
+                        <h2>Горячие закуски</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Флорини с фетой</div>
+                                    <div class="menu-item-name-ru">Florinis gefüllt mit Schafskäse</div>
+                                    <div class="menu-item-desc">Запечённый красный перец с нежной начинкой из феты</div>
+                                </div>
+                                <div class="menu-item-price">9,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Долмадес</div>
+                                    <div class="menu-item-name-ru">Dolmades</div>
+                                    <div class="menu-item-desc">Виноградные листья, фаршированные рисом и ароматными
+                                        специями</div>
+                                </div>
+                                <div class="menu-item-price">8,20 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Фламбированные креветки</div>
+                                    <div class="menu-item-name-ru">Flambierte Scampis</div>
+                                    <div class="menu-item-desc">Креветки, фламбированные с чесноком и белым вином —
+                                        ароматно и нежно</div>
+                                </div>
+                                <div class="menu-item-price">14,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Чесночный хлеб</div>
+                                    <div class="menu-item-name-ru">Knoblauchbrot</div>
+                                    <div class="menu-item-desc">Свежевыпеченный хлеб с ароматным чесночным маслом</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Чесночный багет</div>
+                                    <div class="menu-item-name-ru">Knoblauchbaguette</div>
+                                    <div class="menu-item-desc">Хрустящий багет со свежим чесноком и травами</div>
+                                </div>
+                                <div class="menu-item-price">6,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Жареные баклажаны</div>
+                                    <div class="menu-item-name-ru">Gebratene Auberginen</div>
+                                    <div class="menu-item-desc">Обжаренные до золотистой корочки в оливковом масле, по
+                                        традиционному рецепту</div>
+                                </div>
+                                <div class="menu-item-price">7,20 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Саганаки</div>
+                                    <div class="menu-item-name-ru">Saganaki</div>
+                                    <div class="menu-item-desc">Обжаренный греческий сыр с хрустящей золотистой корочкой
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Фета от Георгио</div>
+                                    <div class="menu-item-name-ru">Schafskäse à la Georgio</div>
+                                    <div class="menu-item-desc">Запечённая по домашнему рецепту — ароматная и пикантная
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Осьминог на гриле</div>
+                                    <div class="menu-item-name-ru">Oktopus vom Grill</div>
+                                    <div class="menu-item-desc">Нежно зажаренный осьминог с оливковым маслом и
+                                        средиземноморскими травами</div>
+                                </div>
+                                <div class="menu-item-price">14,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Пеперони из печи</div>
+                                    <div class="menu-item-name-ru">Peperoni aus dem Backofen</div>
+                                    <div class="menu-item-desc">Запечённые с фетой — остро и ароматно</div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Ассорти закусок (1 персона)</div>
+                                    <div class="menu-item-name-ru">Vorspeisenplatte (1 Person)</div>
+                                    <div class="menu-item-desc">Щедрый выбор наших лучших закусок</div>
+                                </div>
+                                <div class="menu-item-price">21,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Ассорти закусок (2 персоны)</div>
+                                    <div class="menu-item-name-ru">Vorspeisenplatte (2 Personen)</div>
+                                    <div class="menu-item-desc">Богатый выбор мезе на двоих</div>
+                                </div>
+                                <div class="menu-item-price">42,00 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="salads">
+                    <section class="menu-section">
+                        <h2>Салаты</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Деревенский салат</div>
+                                    <div class="menu-item-name-ru">Bauernsalat</div>
+                                    <div class="menu-item-desc">Помидоры, огурцы, лук, паприка, оливки и фета —
+                                        греческая классика</div>
+                                </div>
+                                <div class="menu-item-price">11,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Греческий салат</div>
+                                    <div class="menu-item-name-ru">Griechischer Salat</div>
+                                    <div class="menu-item-desc">Классический с дополнительной фетой и орегано, по
+                                        оригинальному рецепту</div>
+                                </div>
+                                <div class="menu-item-price">12,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Салат из капусты</div>
+                                    <div class="menu-item-name-ru">Krautsalat</div>
+                                    <div class="menu-item-desc">Свежий салат из белокочанной капусты с лёгкой заправкой
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Шеф-салат</div>
+                                    <div class="menu-item-name-ru">Chefsalat</div>
+                                    <div class="menu-item-desc">Смешанный салат с нежной курицей и фетой</div>
+                                </div>
+                                <div class="menu-item-price">15,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="soups">
+                    <section class="menu-section">
+                        <h2>Супы и гарниры</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Фасолевый суп</div>
+                                    <div class="menu-item-name-ru">Bohnensuppe</div>
+                                    <div class="menu-item-desc">Традиционная греческая фасолада с томатами и травами
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Томатный суп</div>
+                                    <div class="menu-item-name-ru">Tomatensuppe</div>
+                                    <div class="menu-item-desc">Домашний по-гречески — ароматный и насыщенный</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Куриный суп</div>
+                                    <div class="menu-item-name-ru">Hühnersuppe</div>
+                                    <div class="menu-item-desc">Домашний куриный суп с лимоном и рисом</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Картофель в фольге с травяным маслом</div>
+                                    <div class="menu-item-name-ru">Folienkartoffel mit Kräuterbutter</div>
+                                    <div class="menu-item-desc">Запечённый в духовке с ароматным травяным маслом</div>
+                                </div>
+                                <div class="menu-item-price">6,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Картофель в фольге с дзадзики</div>
+                                    <div class="menu-item-name-ru">Folienkartoffel mit Zaziki</div>
+                                    <div class="menu-item-desc">Запечённый в духовке, подаётся со свежим дзадзики</div>
+                                </div>
+                                <div class="menu-item-price">7,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Белая фасоль</div>
+                                    <div class="menu-item-name-ru">Dicke weiße Bohnen</div>
+                                    <div class="menu-item-desc">Гигантес в ароматном томатном соусе с травами</div>
+                                </div>
+                                <div class="menu-item-price">6,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Рис с томатами</div>
+                                    <div class="menu-item-name-ru">Tomatenreis</div>
+                                    <div class="menu-item-desc">Рис, приготовленный с томатами и специями</div>
+                                </div>
+                                <div class="menu-item-price">3,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Рис с маслом</div>
+                                    <div class="menu-item-name-ru">Butterreis</div>
+                                    <div class="menu-item-desc">Рассыпчатый рис с нежным сливочным маслом</div>
+                                </div>
+                                <div class="menu-item-price">2,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Картофель фри</div>
+                                    <div class="menu-item-name-ru">Pommes frites</div>
+                                    <div class="menu-item-desc">Хрустящий, золотистый</div>
+                                </div>
+                                <div class="menu-item-price">4,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Картофельные дольки</div>
+                                    <div class="menu-item-name-ru">Kartoffelscheiben</div>
+                                    <div class="menu-item-desc">Хрустящий жареный картофель, золотисто-коричневый</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Картофельные дольки с чесноком</div>
+                                    <div class="menu-item-name-ru">Kartoffelscheiben mit Knoblauch</div>
+                                    <div class="menu-item-desc">Со свежим чесноком</div>
+                                </div>
+                                <div class="menu-item-price">5,80 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Салат-гарнир</div>
+                                    <div class="menu-item-name-ru">Beilagen-Salat</div>
+                                    <div class="menu-item-desc">Небольшой смешанный салат с лёгкой заправкой</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="fish">
+                    <section class="menu-section">
+                        <h2>Рыбные блюда</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Кальмары в панировке</div>
+                                    <div class="menu-item-name-ru">Kalamaria paniert</div>
+                                    <div class="menu-item-desc">Хрустящие кольца кальмаров, обжаренные до золотистой
+                                        корочки</div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Кальмары и гирос</div>
+                                    <div class="menu-item-name-ru">Kalamaria &amp; Gyros</div>
+                                    <div class="menu-item-desc">Аппетитная комбинация хрустящих кальмаров и сочного
+                                        гироса</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Креветки</div>
+                                    <div class="menu-item-name-ru">Scampis</div>
+                                    <div class="menu-item-desc">Сочные креветки в ароматном чесночно-винном соусе</div>
+                                </div>
+                                <div class="menu-item-price">23,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Креветки на гриле</div>
+                                    <div class="menu-item-name-ru">Scampis vom Grill</div>
+                                    <div class="menu-item-desc">Королевские креветки на гриле с средиземноморскими
+                                        травами</div>
+                                </div>
+                                <div class="menu-item-price">27,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Рыбное ассорти</div>
+                                    <div class="menu-item-name-ru">Fischplatte</div>
+                                    <div class="menu-item-desc">Ассорти из различных рыбных и морских деликатесов</div>
+                                </div>
+                                <div class="menu-item-price">24,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Филе морского языка</div>
+                                    <div class="menu-item-name-ru">Seezungenfilet</div>
+                                    <div class="menu-item-desc">Нежнейшее филе, обжаренное в масле с лимонной ноткой
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Филе лосося</div>
+                                    <div class="menu-item-name-ru">Lachsfilet</div>
+                                    <div class="menu-item-desc">Свежий лосось на гриле с лимонной ноткой и лёгким
+                                        гарниром</div>
+                                </div>
+                                <div class="menu-item-price">21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Рыбное ассорти (2 персоны)</div>
+                                    <div class="menu-item-name-ru">Fischplatte (2 Personen)</div>
+                                    <div class="menu-item-desc">Щедрое рыбное и морское ассорти на двоих</div>
+                                </div>
+                                <div class="menu-item-price">48,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Гриль-платтер «Посейдон»</div>
+                                    <div class="menu-item-name-ru">Posidonas Grillplatte</div>
+                                    <div class="menu-item-desc">Премиальные морепродукты на гриле — наш хит для
+                                        любителей даров моря</div>
+                                </div>
+                                <div class="menu-item-price">35,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="grill">
+                    <section class="menu-section">
+                        <h2>Блюда на гриле</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Судзукакья</div>
+                                    <div class="menu-item-name-ru">Souzoukakia</div>
+                                    <div class="menu-item-desc">Греческие котлетки в ароматном томатном соусе</div>
+                                </div>
+                                <div class="menu-item-price">15,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Бифтеки</div>
+                                    <div class="menu-item-name-ru">Bifteki</div>
+                                    <div class="menu-item-desc">Сочная котлета с начинкой из феты</div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Сувлаки</div>
+                                    <div class="menu-item-name-ru">Souvlaki</div>
+                                    <div class="menu-item-desc">Маринованные шашлычки, приготовленные на гриле по
+                                        традиционному рецепту</div>
+                                </div>
+                                <div class="menu-item-price">16,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Гирос</div>
+                                    <div class="menu-item-name-ru">Gyros</div>
+                                    <div class="menu-item-desc">Сочная свинина с вертела, подаётся с дзадзики и гарниром
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">16,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Говяжья печень</div>
+                                    <div class="menu-item-name-ru">Rinderleber</div>
+                                    <div class="menu-item-desc">Нежно обжаренная с карамелизированным луком</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Гирос с соусом Метакса</div>
+                                    <div class="menu-item-name-ru">Gyros mit Metaxasauce</div>
+                                    <div class="menu-item-desc">Гирос с нежным сливочным соусом Метакса — наш любимый
+                                        классик</div>
+                                </div>
+                                <div class="menu-item-price">19,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Медальоны из свиной вырезки</div>
+                                    <div class="menu-item-name-ru">Schweinefiletmedaillons</div>
+                                    <div class="menu-item-desc">Нежные медальоны из свиного филе — сочные и ароматные
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Свиной стейк</div>
+                                    <div class="menu-item-name-ru">Schweinesteak</div>
+                                    <div class="menu-item-desc">Сочный стейк на гриле с хрустящей корочкой</div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Шашлык «Посейдон»</div>
+                                    <div class="menu-item-name-ru">Poseidonspieß</div>
+                                    <div class="menu-item-desc">Большой шашлык с мясом и морепродуктами — лучшее из моря
+                                        и суши</div>
+                                </div>
+                                <div class="menu-item-price">23,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Куриное филе с соусом Метакса</div>
+                                    <div class="menu-item-name-ru">Hähnchenbrustfilet mit Metaxasauce</div>
+                                    <div class="menu-item-desc">Нежное куриное филе со сливочным соусом Метакса и лёгким
+                                        гарниром</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="platters">
+                    <section class="menu-section">
+                        <h2>Основные блюда и платтеры</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Бараньи котлеты</div>
+                                    <div class="menu-item-name-ru">Lammkotelett</div>
+                                    <div class="menu-item-desc">Сочные котлеты на косточке с хрустящей корочкой и
+                                        средиземноморскими травами</div>
+                                </div>
+                                <div class="menu-item-price">24,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Филе ягнёнка</div>
+                                    <div class="menu-item-name-ru">Lammfilet</div>
+                                    <div class="menu-item-desc">Нежное филе ягнёнка на гриле, идеальной прожарки</div>
+                                </div>
+                                <div class="menu-item-price">28,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Стейк рамп</div>
+                                    <div class="menu-item-name-ru">Rumpsteak</div>
+                                    <div class="menu-item-desc">Премиальный стейк желаемой прожарки — наш шедевр</div>
+                                </div>
+                                <div class="menu-item-price">29,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Платтер «Крит»</div>
+                                    <div class="menu-item-name-ru">Kreta-Platte</div>
+                                    <div class="menu-item-desc">Гриль-ассорти с критскими специалитетами</div>
+                                </div>
+                                <div class="menu-item-price">23,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Тарелка шефа</div>
+                                    <div class="menu-item-name-ru">Chef-Teller</div>
+                                    <div class="menu-item-desc">Выбор шеф-повара — всегда особый сюрприз</div>
+                                </div>
+                                <div class="menu-item-price">17,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Тарелка «Сиртаки»</div>
+                                    <div class="menu-item-name-ru">Sirtaki-Teller</div>
+                                    <div class="menu-item-desc">Наше фирменное блюдо — визитная карточка ресторана</div>
+                                </div>
+                                <div class="menu-item-price">17,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Тарелка «Афины»</div>
+                                    <div class="menu-item-name-ru">Athen-Teller</div>
+                                    <div class="menu-item-desc">Мясное ассорти по-афински с богатым гарниром</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Деревенская тарелка</div>
+                                    <div class="menu-item-name-ru">Dorf-Teller</div>
+                                    <div class="menu-item-desc">Рустик-ассорти с традиционными блюдами греческой деревни
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">21,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Гриль-микс</div>
+                                    <div class="menu-item-name-ru">Grillmix</div>
+                                    <div class="menu-item-desc">Комбинация различных блюд на гриле — для настоящих
+                                        гурманов</div>
+                                </div>
+                                <div class="menu-item-price">36,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Гриль-платтер «Дельфы»</div>
+                                    <div class="menu-item-name-ru">Delphi Grillplatte</div>
+                                    <div class="menu-item-desc">Большой выбор гриля для ценителей греческих
+                                        специалитетов</div>
+                                </div>
+                                <div class="menu-item-price">36,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Платтер «Родос» (2 персоны)</div>
+                                    <div class="menu-item-name-ru">Rhodos-Platte (2 Personen)</div>
+                                    <div class="menu-item-desc">Богатое ассорти на двоих — лучшее с нашего гриля</div>
+                                </div>
+                                <div class="menu-item-price">48,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Семейный платтер (4 персоны)</div>
+                                    <div class="menu-item-name-ru">Familien-Platte (4 Personen)</div>
+                                    <div class="menu-item-desc">Щедрый выбор для всей семьи и компании</div>
+                                </div>
+                                <div class="menu-item-price">92,00 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="oven">
+                    <section class="menu-section">
+                        <h2>Блюда из печи</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Спагетти с фаршем</div>
+                                    <div class="menu-item-name-ru">Spaghetti mit Hackfleisch</div>
+                                    <div class="menu-item-desc">Запечённые с сыром до золотистой корочки</div>
+                                </div>
+                                <div class="menu-item-price">12,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Критараки с фаршем</div>
+                                    <div class="menu-item-name-ru">Kritharaki mit Hackfleisch</div>
+                                    <div class="menu-item-desc">Греческая паста орзо с фаршем, запечённая в духовке
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">12,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Телятина от шефа</div>
+                                    <div class="menu-item-name-ru">Kalbfleisch à la Chef</div>
+                                    <div class="menu-item-desc">Приготовленная по домашнему рецепту — нежная и ароматная
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">19,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Баранья голень</div>
+                                    <div class="menu-item-name-ru">Lammhaxe</div>
+                                    <div class="menu-item-desc">Медленно томлённая в печи с насыщенным соусом и гарниром
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">20,90 – 21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Телятина (разные варианты)</div>
+                                    <div class="menu-item-name-ru">Kalbfleisch (verschiedene Variationen)</div>
+                                    <div class="menu-item-desc">Спрашивайте о наших актуальных вариантах — всегда свежее
+                                        приготовление</div>
+                                </div>
+                                <div class="menu-item-price">19,90 – 20,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA inside last slide -->
+                    <section class="section cta-section">
+                        <div class="container">
+                            <h2>Не можете определиться?</h2>
+                            <div class="divider"><span>◆</span></div>
+                            <p>Мы с радостью поможем выбрать блюда и забронируем для вас столик.</p>
+
+                            <div class="cta-contacts">
+                                <div class="cta-contact-item">
+                                    <span>📞</span>
+                                    <a href="tel:+493660362335">+49 36603 62 335</a>
+                                </div>
+                            </div>
+
+                            <a href="https://t.me/Nikolay_Yankovskiy" target="_blank"
+                                class="btn btn-outline">Забронировать столик</a>
+                        </div>
+                    </section>
+                </div>
+
+            </div><!-- /menu-slider -->
+
+            <!-- Dots indicator -->
+            <div class="menu-dots">
+                <button class="menu-dot active" aria-label="Slide 1"></button>
+                <button class="menu-dot" aria-label="Slide 2"></button>
+                <button class="menu-dot" aria-label="Slide 3"></button>
+                <button class="menu-dot" aria-label="Slide 4"></button>
+                <button class="menu-dot" aria-label="Slide 5"></button>
+                <button class="menu-dot" aria-label="Slide 6"></button>
+                <button class="menu-dot" aria-label="Slide 7"></button>
+                <button class="menu-dot" aria-label="Slide 8"></button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index-ru.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki"
+                            class="logo-img"></a>
+                    <p>Аутентичный греческий ресторан в сердце Вайды. Традиции, вкус и средиземноморское гостеприимство.
+                    </p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="index-ru.html#about">О нас</a></li>
+                        <li><a href="menu-ru.html">Меню</a></li>
+                        <li><a href="index-ru.html#gallery">Галерея</a></li>
+                        <li><a href="index-ru.html#contact">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Контакты</h4>
+                    <p>📍 Markt 1, 07570 Weida</p>
+                    <p>📞 +49 36603 62 335</p>
+                    <p>✉️ Georgios@Sirtaki-Weida.de</p>
+                </div>
+
+                <div class="footer-hours">
+                    <h4>Часы работы</h4>
+                    <p>Вт–Вс: 11:30–14:30</p>
+                    <p>17:30–до последнего гостя</p>
+                    <p>Понедельник: выходной</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Sirtaki. Все права защищены.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- AI Sirtaki Widget -->
+    <script src="js/ai-widget.js"></script>
+</body>
+
+</html>

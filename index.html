@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sirtaki in Weida – Authentisch griechisches Restaurant mit frischen Grillspezialitäten, Fisch und traditionellen Mezedes. Jetzt Tisch reservieren!">
+    <meta name="keywords"
+        content="Griechisches Restaurant Weida, Sirtaki Weida, griechische Küche Thüringen, Gyros, Souvlaki, Grill">
+
+    <title>Sirtaki Weida | Echte griechische Küche im Herzen Thüringens</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki" class="logo-img"></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#about" class="nav-link">Über uns</a></li>
+                    <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
+                    <li><a href="#gallery" class="nav-link">Galerie</a></li>
+                    <li><a href="#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active">DE</button>
+                    <button class="lang-btn" onclick="window.location.href='index-ru.html'">RU</button>
+                </div>
+
+                <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Reservieren</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <ul class="nav-list">
+            <li><a href="#about" class="nav-link">Über uns</a></li>
+            <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
+            <li><a href="#gallery" class="nav-link">Galerie</a></li>
+            <li><a href="#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="lang-switcher">
+            <button class="lang-btn active">DE</button>
+            <button class="lang-btn" onclick="window.location.href='index-ru.html'">RU</button>
+        </div>
+
+        <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Tisch reservieren</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero">
+        <img src="images/building.jpg" alt="Restaurant Sirtaki am Marktplatz Weida" class="hero-bg">
+        <img src="images/building-mob.jpg" alt="Restaurant Sirtaki" class="hero-bg-mobile">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Sirtaki</h1>
+            <span class="hero-gold-line"></span>
+            <p class="hero-subtitle">Echte griechische Küche im Herzen von Weida</p>
+            <p class="hero-tagline">Frischer Grill, Duft von Kräutern und warme mediterrane Gastfreundschaft.</p>
+
+            <div class="hero-buttons">
+                <a href="menu.html" class="btn btn-outline">Speisekarte</a>
+                <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Tisch reservieren</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section features">
+        <div class="container">
+            <div class="features-grid">
+
+                <div class="feature-item">
+                    <div class="feature-icon"><img src="images/icon/grill.png" alt="Grill"></div>
+                    <div>
+                        <h3>Täglich frisch vom Grill</h3>
+                        <p>Aromatisches Fleisch, saftige Steaks und unser Signature-Gyros – direkt vom Feuer auf Ihren
+                            Tisch.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><img src="images/icon/tradition.png" alt="Tradition"></div>
+                    <div>
+                        <h3>Griechische Küchentradition</h3>
+                        <p>Klassische Rezepte, bewährt über Generationen und zubereitet mit Respekt vor der Tradition.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="feature-item">
+                    <div class="feature-icon"><img src="images/icon/company.png" alt="Gesellschaft"></div>
+                    <div>
+                        <h3>Perfekt für Gesellschaft</h3>
+                        <p>Gemütliche Räume, Sommerterrasse und großzügige Platten für gesellige Abende mit Freunden und
+                            Familie.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+
+                <div class="about-image">
+                    <img src="images/terrace.jpg" alt="Sommerterrasse Restaurant Sirtaki">
+                </div>
+
+                <div class="about-content">
+                    <h2>Willkommen bei Sirtaki</h2>
+                    <div class="divider"><span>◆</span></div>
+                    <p>Seit vielen Jahren ist Sirtaki ein Teil von Weida. Im historischen Gebäude am Markt 1 schaffen
+                        wir eine Atmosphäre echter griechischer Gastfreundschaft – mit sorgfältig ausgewählten Zutaten
+                        und Rezepten, die behutsam von Generation zu Generation weitergegeben werden.</p>
+                    <p>Hier erwartet Sie mehr als nur ein Abendessen. Es ist eine kleine Reise nach Griechenland – mit
+                        aromatischem Grill, Gerichten aus dem Ofen und frischen Gaben des Meeres. Jeder Teller wird bei
+                        uns mit Liebe zum Detail und Respekt vor der Tradition zubereitet.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EVENTS -->
+    <section class="section events">
+        <div class="container">
+            <div class="events-grid">
+
+                <div class="events-image">
+                    <img src="images/hall-3.jpg" alt="Speisesaal für Feiern und Gruppen">
+                </div>
+
+                <div class="events-content">
+                    <h2>Perfekt für Ihre Feier</h2>
+                    <div class="divider"><span>◆</span></div>
+                    <p>Familienfeier, Geburtstag, Firmenevent oder einfach ein Abend im Kreise von Freunden – im Sirtaki
+                        finden Sie die passende Atmosphäre für jeden Anlass.</p>
+                    <p>Unsere Räume eignen sich für Gruppen jeder Größe, und unsere großzügigen Grillplatten und
+                        Hausspezialitäten machen Ihre Feier zu einem echten Genuss. Wir kümmern uns um die Details,
+                        damit Sie den Moment genießen können.</p>
+                    <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Jetzt
+                        anfragen</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Galerie</h2>
+                <div class="divider"><span>◆</span></div>
+                <p>Die Atmosphäre unserer Räume und unsere Lieblingsgerichte im Detail</p>
+            </div>
+
+            <!-- Desktop grid (hidden on mobile) -->
+            <div class="gallery-grid">
+                <!-- Залы (16:9) -->
+                <div class="gallery-item landscape">
+                    <img src="images/hall-2.jpg" alt="Speisesaal 2">
+                </div>
+                <div class="gallery-item landscape">
+                    <img src="images/hall-1.jpg" alt="Speisesaal 1">
+                </div>
+                <div class="gallery-item landscape">
+                    <img src="images/hall-3.jpg" alt="Speisesaal 3">
+                </div>
+
+                <!-- Блюда (4:5) -->
+                <div class="gallery-item">
+                    <img src="images/food/gyros.jpg" alt="Gyros">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/lamb-chops.jpg" alt="Lammkotelett">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/salmon.jpg" alt="Lachsfilet">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/greek-salad.jpg" alt="Griechischer Salat">
+                </div>
+
+                <!-- Терраса (16:9) -->
+                <div class="gallery-item landscape">
+                    <img src="images/terrace.jpg" alt="Sommerterrasse">
+                </div>
+
+                <!-- Ещё блюда (4:5) -->
+                <div class="gallery-item">
+                    <img src="images/food/saganaki.jpg" alt="Saganaki">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/platter.jpg" alt="Grillplatte">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/tzatziki.jpg" alt="Tzatziki Meze">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/food/lamb-shank.jpg" alt="Lammhaxe">
+                </div>
+            </div>
+
+            <!-- Mobile sliders (shown only on mobile) -->
+            <div class="gallery-slider-section">
+
+                <!-- Slider 1: Räume -->
+                <div class="gallery-slider-block">
+                    <div class="gallery-slider-label">Unsere Räume</div>
+                    <div class="gallery-slider" data-slider="rooms">
+                        <div class="gallery-slide">
+                            <img src="images/hall-2.jpg" alt="Speisesaal 2">
+                            <div class="gallery-slide-caption">Gemütliche Ecke</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/hall-1.jpg" alt="Speisesaal 1">
+                            <div class="gallery-slide-caption">Hauptsaal</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/hall-3.jpg" alt="Speisesaal 3">
+                            <div class="gallery-slide-caption">Großer Saal</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/terrace.jpg" alt="Sommerterrasse">
+                            <div class="gallery-slide-caption">Sommerterrasse</div>
+                        </div>
+                    </div>
+                    <div class="slider-dots" data-dots="rooms"></div>
+                </div>
+
+                <!-- Slider 2: Speisen -->
+                <div class="gallery-slider-block">
+                    <div class="gallery-slider-label">Unsere Gerichte</div>
+                    <div class="gallery-slider" data-slider="food">
+                        <div class="gallery-slide">
+                            <img src="images/food/gyros.jpg" alt="Gyros">
+                            <div class="gallery-slide-caption">Gyros</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/lamb-chops.jpg" alt="Lammkotelett">
+                            <div class="gallery-slide-caption">Lammkotelett</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/salmon.jpg" alt="Lachsfilet">
+                            <div class="gallery-slide-caption">Lachsfilet</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/greek-salad.jpg" alt="Griechischer Salat">
+                            <div class="gallery-slide-caption">Griechischer Salat</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/saganaki.jpg" alt="Saganaki">
+                            <div class="gallery-slide-caption">Saganaki</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/platter.jpg" alt="Grillplatte">
+                            <div class="gallery-slide-caption">Grillplatte</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/tzatziki.jpg" alt="Tzatziki Meze">
+                            <div class="gallery-slide-caption">Tzatziki</div>
+                        </div>
+                        <div class="gallery-slide">
+                            <img src="images/food/lamb-shank.jpg" alt="Lammhaxe">
+                            <div class="gallery-slide-caption">Lammhaxe</div>
+                        </div>
+                    </div>
+                    <div class="slider-dots" data-dots="food"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU PREVIEW -->
+    <section class="section menu-preview">
+        <div class="container">
+            <div class="section-header">
+                <h2>Unsere Speisekarte</h2>
+                <div class="divider"><span>◆</span></div>
+                <p>Von klassischen Mezedes bis zu großzügigen Grillplatten – entdecken Sie die echte griechische Küche
+                </p>
+            </div>
+
+            <div class="menu-preview-content">
+                <div class="menu-categories">
+                    <a href="menu.html#cold" class="menu-category">Kalte Vorspeisen</a>
+                    <a href="menu.html#warm" class="menu-category">Warme Vorspeisen</a>
+                    <a href="menu.html#salads" class="menu-category">Salate</a>
+                    <a href="menu.html#fish" class="menu-category">Fischgerichte</a>
+                    <a href="menu.html#grill" class="menu-category">Grillspezialitäten</a>
+                    <a href="menu.html#oven" class="menu-category">Aus dem Backofen</a>
+                    <a href="menu.html#platters" class="menu-category">Platten für 2–4 Personen</a>
+                </div>
+
+                <a href="menu.html" class="btn btn-secondary">Komplette Speisekarte ansehen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / CONTACT -->
+    <section id="contact" class="section cta-section">
+        <div class="container">
+            <h2>Reservieren Sie Ihren Tisch im Sirtaki</h2>
+            <div class="divider"><span>◆</span></div>
+            <p>Wir freuen uns auf Ihren Besuch – wählen Sie Ihren bevorzugten Kontaktweg und kommen Sie vorbei.</p>
+
+            <div class="cta-contacts">
+                <div class="cta-contact-item">
+                    <span>📞</span>
+                    <a href="tel:+493660362335">+49 36603 62 335</a>
+                </div>
+                <div class="cta-contact-item">
+                    <span>✉️</span>
+                    <a href="mailto:Georgios@Sirtaki-Weida.de">Georgios@Sirtaki-Weida.de</a>
+                </div>
+                <div class="cta-contact-item">
+                    <span>📍</span>
+                    <span>Markt 1, 07570 Weida</span>
+                </div>
+            </div>
+
+            <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-outline">Über Telegram
+                reservieren</a>
+
+            <div class="cta-hours">
+                <p><strong>Öffnungszeiten:</strong></p>
+                <p>Dienstag – Sonntag: 11:30–14:30 & 17:30–open end</p>
+                <p>Montag: Ruhetag (außer Feiertage)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki"
+                            class="logo-img"></a>
+                    <p>Authentisch griechisches Restaurant im Herzen von Weida. Tradition, Geschmack und mediterrane
+                        Gastfreundschaft.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">Über uns</a></li>
+                        <li><a href="menu.html">Speisekarte</a></li>
+                        <li><a href="#gallery">Galerie</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>📍 Markt 1, 07570 Weida</p>
+                    <p>📞 +49 36603 62 335</p>
+                    <p>✉️ Georgios@Sirtaki-Weida.de</p>
+                </div>
+
+                <div class="footer-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <p>Di–So: 11:30–14:30</p>
+                    <p>17:30–open end</p>
+                    <p>Montag: Ruhetag</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Sirtaki. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FIXED MOBILE CTA -->
+    <div class="mobile-fixed-cta">
+        <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Tisch reservieren</a>
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Schließen">×</button>
+            <img src="" alt="">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- AI Sirtaki Widget -->
+    <script src="js/ai-widget.js"></script>
+</body>
+
+</html>

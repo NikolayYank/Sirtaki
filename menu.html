@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Speisekarte Sirtaki Weida – Griechische Vorspeisen, Grillspezialitäten, Fisch, traditionelle Aufläufe und großzügige Platten für Gesellschaft.">
+    <meta name="keywords"
+        content="Speisekarte Sirtaki Weida, griechisches Essen Weida, Gyros, Souvlaki, Lammkotelett, Grill">
+
+    <title>Speisekarte | Sirtaki Weida</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki" class="logo-img"></a>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html#about" class="nav-link">Über uns</a></li>
+                    <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Galerie</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Kontakt</a></li>
+                </ul>
+
+                <div class="lang-switcher">
+                    <button class="lang-btn active">DE</button>
+                    <button class="lang-btn" onclick="window.location.href='menu-ru.html'">RU</button>
+                </div>
+
+                <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Reservieren</a>
+            </nav>
+
+            <button class="menu-toggle" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu">
+        <ul class="nav-list">
+            <li><a href="index.html#about" class="nav-link">Über uns</a></li>
+            <li><a href="menu.html" class="nav-link">Speisekarte</a></li>
+            <li><a href="index.html#gallery" class="nav-link">Galerie</a></li>
+            <li><a href="index.html#contact" class="nav-link">Kontakt</a></li>
+        </ul>
+
+        <div class="lang-switcher">
+            <button class="lang-btn active">DE</button>
+            <button class="lang-btn" onclick="window.location.href='menu-ru.html'">RU</button>
+        </div>
+
+        <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-primary">Tisch reservieren</a>
+    </div>
+
+    <!-- Category Tabs (fixed, outside menu-page to avoid overflow issues) -->
+    <nav class="menu-tabs">
+        <button class="menu-tab active">Kalt</button>
+        <button class="menu-tab">Warm</button>
+        <button class="menu-tab">Salate</button>
+        <button class="menu-tab">Suppen</button>
+        <button class="menu-tab">Fisch</button>
+        <button class="menu-tab">Grill</button>
+        <button class="menu-tab">Platten</button>
+        <button class="menu-tab">Ofen</button>
+    </nav>
+
+    <!-- MENU PAGE -->
+    <main class="menu-page">
+        <div class="container">
+
+            <!-- Horizontal Slider -->
+            <div class="menu-slider">
+                <!-- Swipe Hint -->
+                <div class="swipe-hint">
+                    ← Wischen Sie zur Seite, um weitere Kategorien zu sehen <span>→</span>
+                </div>
+
+                <div class="menu-slide" id="cold">
+                    <section class="menu-section">
+                        <h2>Kalte Vorspeisen</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Zaziki</div>
+                                    <div class="menu-item-desc">Joghurt-Dip mit Gurke, Knoblauch und Olivenöl nach
+                                        traditionellem Rezept</div>
+                                </div>
+                                <div class="menu-item-price">5,80 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Peperoni &amp; Oliven</div>
+                                    <div class="menu-item-desc">Marinierte Peperoni und griechische Oliven mit leichter
+                                        Schärfe</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rote Bete mit Knoblauch</div>
+                                    <div class="menu-item-desc">Rote Bete mariniert mit Knoblauch und Olivenöl</div>
+                                </div>
+                                <div class="menu-item-price">6,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Taramasalat</div>
+                                    <div class="menu-item-desc">Feiner Fischrogencreme mit einer Zitrusnote</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chtipiti</div>
+                                    <div class="menu-item-desc">Pikante Schafskäse-Creme mit Paprika und Olivenöl</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Oktopussalat</div>
+                                    <div class="menu-item-desc">Zarter Oktopus mit Olivenöl und mediterranen Kräutern
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">11,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Schafskäse mit Peperoni &amp; Oliven</div>
+                                    <div class="menu-item-desc">Griechischer Feta mit Oliven und leichter
+                                        Peperoni-Schärfe</div>
+                                </div>
+                                <div class="menu-item-price">7,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kalamariasalat</div>
+                                    <div class="menu-item-desc">Frischer Salat mit Tintenfisch und aromatischen Kräutern
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="warm">
+                    <section class="menu-section">
+                        <h2>Warme Vorspeisen</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Florinis gefüllt mit Schafskäse</div>
+                                    <div class="menu-item-desc">Gegrillte rote Paprika mit cremiger Feta-Füllung</div>
+                                </div>
+                                <div class="menu-item-price">9,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Dolmades</div>
+                                    <div class="menu-item-desc">Weinblätter gefüllt mit Reis und aromatischen Gewürzen
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">8,20 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Flambierte Scampis</div>
+                                    <div class="menu-item-desc">Mit Knoblauch und Weißwein flambiert, aromatisch und
+                                        zart</div>
+                                </div>
+                                <div class="menu-item-price">14,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Knoblauchbrot</div>
+                                    <div class="menu-item-desc">Frisch gebacken mit aromatischer Knoblauchbutter</div>
+                                </div>
+                                <div class="menu-item-price">5,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Knoblauchbaguette</div>
+                                    <div class="menu-item-desc">Knuspriges Baguette mit frischem Knoblauch und Kräutern
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">6,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Gebratene Auberginen</div>
+                                    <div class="menu-item-desc">In Olivenöl goldbraun gebraten, nach traditioneller Art
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">7,20 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Saganaki</div>
+                                    <div class="menu-item-desc">Gebratener griechischer Käse mit knuspriger goldener
+                                        Kruste</div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Schafskäse à la Georgio</div>
+                                    <div class="menu-item-desc">Nach Hausrezept im Ofen überbacken, aromatisch und
+                                        würzig</div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Oktopus vom Grill</div>
+                                    <div class="menu-item-desc">Zart gegrillter Oktopus mit Olivenöl und mediterranen
+                                        Kräutern</div>
+                                </div>
+                                <div class="menu-item-price">14,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Peperoni aus dem Backofen</div>
+                                    <div class="menu-item-desc">Mit Schafskäse überbacken, aromatisch und leicht scharf
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">9,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Vorspeisenplatte (1 Person)</div>
+                                    <div class="menu-item-desc">Großzügige Auswahl unserer besten Vorspeisen</div>
+                                </div>
+                                <div class="menu-item-price">21,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Vorspeisenplatte (2 Personen)</div>
+                                    <div class="menu-item-desc">Reichhaltige Mezedes-Auswahl zum Teilen</div>
+                                </div>
+                                <div class="menu-item-price">42,00 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="salads">
+                    <section class="menu-section">
+                        <h2>Salate</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Bauernsalat</div>
+                                    <div class="menu-item-desc">Tomaten, Gurken, Zwiebeln, Paprika, Oliven und Feta –
+                                        der griechische Klassiker</div>
+                                </div>
+                                <div class="menu-item-price">11,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Griechischer Salat</div>
+                                    <div class="menu-item-desc">Klassisch mit extra Feta und Oregano, nach originalem
+                                        Rezept</div>
+                                </div>
+                                <div class="menu-item-price">12,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Krautsalat</div>
+                                    <div class="menu-item-desc">Frischer Weißkohlsalat mit leichtem Dressing</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chefsalat</div>
+                                    <div class="menu-item-desc">Gemischter Salat mit zartem Hähnchen und Feta</div>
+                                </div>
+                                <div class="menu-item-price">15,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="soups">
+                    <section class="menu-section">
+                        <h2>Suppen &amp; Beilagen</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Bohnensuppe</div>
+                                    <div class="menu-item-desc">Traditionelle griechische Fasolada mit Tomaten und
+                                        Kräutern</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Tomatensuppe</div>
+                                    <div class="menu-item-desc">Hausgemacht nach griechischer Art, aromatisch und
+                                        wärmend</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Hühnersuppe</div>
+                                    <div class="menu-item-desc">Hausgemachte Hühnersuppe mit Zitrone und Reis</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Folienkartoffel mit Kräuterbutter</div>
+                                    <div class="menu-item-desc">Im Ofen gebacken, serviert mit aromatischer
+                                        Kräuterbutter</div>
+                                </div>
+                                <div class="menu-item-price">6,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Folienkartoffel mit Zaziki</div>
+                                    <div class="menu-item-desc">Im Ofen gebacken, serviert mit frischem Zaziki</div>
+                                </div>
+                                <div class="menu-item-price">7,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Dicke weiße Bohnen</div>
+                                    <div class="menu-item-desc">Gigantes in aromatischer Tomatensauce mit Kräutern</div>
+                                </div>
+                                <div class="menu-item-price">6,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Tomatenreis</div>
+                                    <div class="menu-item-desc">Reis zubereitet mit Tomaten und Gewürzen</div>
+                                </div>
+                                <div class="menu-item-price">3,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Butterreis</div>
+                                    <div class="menu-item-desc">Lockerer Reis mit feiner Butter</div>
+                                </div>
+                                <div class="menu-item-price">2,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Pommes frites</div>
+                                    <div class="menu-item-desc">Knusprig und goldbraun</div>
+                                </div>
+                                <div class="menu-item-price">4,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kartoffelscheiben</div>
+                                    <div class="menu-item-desc">Knusprige Bratkartoffeln, goldbraun gebraten</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kartoffelscheiben mit Knoblauch</div>
+                                    <div class="menu-item-desc">Mit frischem Knoblauch verfeinert</div>
+                                </div>
+                                <div class="menu-item-price">5,80 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Beilagen-Salat</div>
+                                    <div class="menu-item-desc">Kleiner gemischter Salat mit leichtem Dressing</div>
+                                </div>
+                                <div class="menu-item-price">4,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="fish">
+                    <section class="menu-section">
+                        <h2>Fischgerichte</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kalamaria paniert</div>
+                                    <div class="menu-item-desc">Knusprig panierte Tintenfischringe, goldbraun gebraten
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kalamaria &amp; Gyros</div>
+                                    <div class="menu-item-desc">Köstliche Kombination aus knusprigem Tintenfisch und
+                                        saftigem Gyros</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Scampis</div>
+                                    <div class="menu-item-desc">Saftige Garnelen in aromatischer Knoblauch-Weißweinsauce
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">23,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Scampis vom Grill</div>
+                                    <div class="menu-item-desc">Gegrillte Riesengarnelen mit mediterranen Kräutern</div>
+                                </div>
+                                <div class="menu-item-price">27,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Fischplatte</div>
+                                    <div class="menu-item-desc">Auswahl verschiedener Fisch- und
+                                        Meeresfrüchtespezialitäten</div>
+                                </div>
+                                <div class="menu-item-price">24,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Seezungenfilet</div>
+                                    <div class="menu-item-desc">Zartes Filet, in Butter gebraten mit feiner Zitrusnote
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lachsfilet</div>
+                                    <div class="menu-item-desc">Frischer Lachs vom Grill mit Zitrusnote und leichter
+                                        Beilage</div>
+                                </div>
+                                <div class="menu-item-price">21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Fischplatte (2 Personen)</div>
+                                    <div class="menu-item-desc">Großzügige Fisch- und Meeresfrüchteauswahl zum Teilen
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">48,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Posidonas Grillplatte</div>
+                                    <div class="menu-item-desc">Premium-Meeresfrüchte vom Grill – unser Highlight für
+                                        Fischliebhaber</div>
+                                </div>
+                                <div class="menu-item-price">35,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="grill">
+                    <section class="menu-section">
+                        <h2>Grillspezialitäten</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Souzoukakia</div>
+                                    <div class="menu-item-desc">Griechische Hackfleischröllchen in aromatischer
+                                        Tomatensauce</div>
+                                </div>
+                                <div class="menu-item-price">15,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Bifteki</div>
+                                    <div class="menu-item-desc">Saftiges Hacksteak gefüllt mit Schafskäse</div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Souvlaki</div>
+                                    <div class="menu-item-desc">Marinierte Fleischspieße, auf dem Grill zubereitet nach
+                                        traditioneller Art</div>
+                                </div>
+                                <div class="menu-item-price">16,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Gyros</div>
+                                    <div class="menu-item-desc">Saftiges Schweinefleisch vom Drehspieß, serviert mit
+                                        Zaziki und Beilage</div>
+                                </div>
+                                <div class="menu-item-price">16,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rinderleber</div>
+                                    <div class="menu-item-desc">Zart gebraten mit karamellisierten Zwiebeln</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Gyros mit Metaxasauce</div>
+                                    <div class="menu-item-desc">Gyros verfeinert mit cremiger Metaxasauce – unser
+                                        beliebter Klassiker</div>
+                                </div>
+                                <div class="menu-item-price">19,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Schweinefiletmedaillons</div>
+                                    <div class="menu-item-desc">Zarte Medaillons vom Schweinefilet, saftig und
+                                        aromatisch</div>
+                                </div>
+                                <div class="menu-item-price">21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Schweinesteak</div>
+                                    <div class="menu-item-desc">Saftiges Steak vom Grill mit knuspriger Kruste</div>
+                                </div>
+                                <div class="menu-item-price">18,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Poseidonspieß</div>
+                                    <div class="menu-item-desc">Großer Spieß mit Fleisch und Meeresfrüchten – das Beste
+                                        aus Meer und Land</div>
+                                </div>
+                                <div class="menu-item-price">23,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Hähnchenbrustfilet mit Metaxasauce</div>
+                                    <div class="menu-item-desc">Zartes Hähnchenfilet mit cremiger Metaxasauce und
+                                        leichter Beilage</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="platters">
+                    <section class="menu-section">
+                        <h2>Hauptgerichte &amp; Platten</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lammkotelett</div>
+                                    <div class="menu-item-desc">Saftige Lammkoteletts mit knuspriger Kruste und
+                                        mediterranen Kräutern</div>
+                                </div>
+                                <div class="menu-item-price">24,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lammfilet</div>
+                                    <div class="menu-item-desc">Zartes Lammfilet vom Grill, perfekt rosa gebraten</div>
+                                </div>
+                                <div class="menu-item-price">28,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rumpsteak</div>
+                                    <div class="menu-item-desc">Premium-Rindersteak nach Wunsch gebraten – unser
+                                        Meisterstück</div>
+                                </div>
+                                <div class="menu-item-price">29,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kreta-Platte</div>
+                                    <div class="menu-item-desc">Gemischte Grillplatte mit kretischen Spezialitäten</div>
+                                </div>
+                                <div class="menu-item-price">23,50 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Chef-Teller</div>
+                                    <div class="menu-item-desc">Auswahl des Küchenchefs – immer eine besondere
+                                        Überraschung</div>
+                                </div>
+                                <div class="menu-item-price">17,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Sirtaki-Teller</div>
+                                    <div class="menu-item-desc">Unsere Hausspezialität – das Signature-Gericht des
+                                        Hauses</div>
+                                </div>
+                                <div class="menu-item-price">17,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Athen-Teller</div>
+                                    <div class="menu-item-desc">Gemischte Fleischplatte nach Athener Art mit
+                                        reichhaltiger Beilage</div>
+                                </div>
+                                <div class="menu-item-price">18,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Dorf-Teller</div>
+                                    <div class="menu-item-desc">Rustikale Platte mit traditionellen Gerichten aus der
+                                        griechischen Küche</div>
+                                </div>
+                                <div class="menu-item-price">21,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Grillmix</div>
+                                    <div class="menu-item-desc">Verschiedene Grillspezialitäten kombiniert – für echte
+                                        Genießer</div>
+                                </div>
+                                <div class="menu-item-price">36,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Delphi Grillplatte</div>
+                                    <div class="menu-item-desc">Großzügige Grillauswahl für Liebhaber griechischer
+                                        Spezialitäten</div>
+                                </div>
+                                <div class="menu-item-price">36,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Rhodos-Platte (2 Personen)</div>
+                                    <div class="menu-item-desc">Reichhaltige Platte zum Teilen – das Beste vom Grill für
+                                        zwei</div>
+                                </div>
+                                <div class="menu-item-price">48,00 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Familien-Platte (4 Personen)</div>
+                                    <div class="menu-item-desc">Großzügige Auswahl für die ganze Familie und gesellige
+                                        Abende</div>
+                                </div>
+                                <div class="menu-item-price">92,00 €</div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="menu-slide" id="oven">
+                    <section class="menu-section">
+                        <h2>Aus dem Backofen</h2>
+                        <div class="divider"><span>◆</span></div>
+
+                        <div class="menu-items">
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Spaghetti mit Hackfleisch</div>
+                                    <div class="menu-item-desc">Mit Käse überbacken, goldbraun und aromatisch</div>
+                                </div>
+                                <div class="menu-item-price">12,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kritharaki mit Hackfleisch</div>
+                                    <div class="menu-item-desc">Griechische Reisnudeln mit Hackfleisch überbacken</div>
+                                </div>
+                                <div class="menu-item-price">12,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kalbfleisch à la Chef</div>
+                                    <div class="menu-item-desc">Nach Hausrezept im Ofen zubereitet, zart und aromatisch
+                                    </div>
+                                </div>
+                                <div class="menu-item-price">19,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Lammhaxe</div>
+                                    <div class="menu-item-desc">Langsam im Ofen geschmort mit kräftiger Sauce und
+                                        Beilage</div>
+                                </div>
+                                <div class="menu-item-price">20,90 – 21,90 €</div>
+                            </div>
+
+                            <div class="menu-item">
+                                <div class="menu-item-info">
+                                    <div class="menu-item-name">Kalbfleisch (verschiedene Variationen)</div>
+                                    <div class="menu-item-desc">Fragen Sie nach unseren aktuellen Variationen – immer
+                                        frisch zubereitet</div>
+                                </div>
+                                <div class="menu-item-price">19,90 – 20,50 €</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- CTA inside last slide -->
+                    <section class="section cta-section">
+                        <div class="container">
+                            <h2>Können Sie sich nicht entscheiden?</h2>
+                            <div class="divider"><span>◆</span></div>
+                            <p>Wir helfen Ihnen gerne bei der Auswahl und reservieren einen Tisch für Sie.</p>
+
+                            <div class="cta-contacts">
+                                <div class="cta-contact-item">
+                                    <span>📞</span>
+                                    <a href="tel:+493660362335">+49 36603 62 335</a>
+                                </div>
+                            </div>
+
+                            <a href="https://t.me/Nikolay_Yankovskiy" target="_blank" class="btn btn-outline">Tisch
+                                reservieren</a>
+                        </div>
+                    </section>
+                </div>
+
+            </div><!-- /menu-slider -->
+
+            <!-- Dots indicator -->
+            <div class="menu-dots">
+                <button class="menu-dot active" aria-label="Slide 1"></button>
+                <button class="menu-dot" aria-label="Slide 2"></button>
+                <button class="menu-dot" aria-label="Slide 3"></button>
+                <button class="menu-dot" aria-label="Slide 4"></button>
+                <button class="menu-dot" aria-label="Slide 5"></button>
+                <button class="menu-dot" aria-label="Slide 6"></button>
+                <button class="menu-dot" aria-label="Slide 7"></button>
+                <button class="menu-dot" aria-label="Slide 8"></button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><img src="images/icon/logo.png" alt="Sirtaki"
+                            class="logo-img"></a>
+                    <p>Authentisch griechisches Restaurant im Herzen von Weida. Tradition, Geschmack und mediterrane
+                        Gastfreundschaft.</p>
+                </div>
+
+                <div class="footer-nav">
+                    <h4>Navigation</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#about">Über uns</a></li>
+                        <li><a href="menu.html">Speisekarte</a></li>
+                        <li><a href="index.html#gallery">Galerie</a></li>
+                        <li><a href="index.html#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Kontakt</h4>
+                    <p>📍 Markt 1, 07570 Weida</p>
+                    <p>📞 +49 36603 62 335</p>
+                    <p>✉️ Georgios@Sirtaki-Weida.de</p>
+                </div>
+
+                <div class="footer-hours">
+                    <h4>Öffnungszeiten</h4>
+                    <p>Di–So: 11:30–14:30</p>
+                    <p>17:30–open end</p>
+                    <p>Montag: Ruhetag</p>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2025 Sirtaki. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html">Impressum</a>
+                    <a href="datenschutz.html">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+
+    <!-- AI Sirtaki Widget -->
+    <script src="js/ai-widget.js"></script>
+</body>
+
+</html>
